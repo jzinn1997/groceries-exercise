@@ -21,17 +21,27 @@ products = [
     {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", "aisle": "juice nectars", "price": 4.25}
 ] # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
 
+
 products_count = len(products)
 
 print("--------------")
 print("THERE ARE " + str(products_count) + " PRODUCTS:")
 print(" --------------")
+ 
+def sort_by_name(any_product):
+    return any_product["name"]
+sorted_products = sorted(products, key=sort_by_name)
 
-for p in products:
+
+
+
+for p in sort_by_name:
     #print(p["name"])
     #price_usd = #p["price"] # "$4.99"
     price_usd = "${0:.2f}".format(p["price"])
     print(" + " + p["name"] + " (" + str(price_usd) + ")")
+
+
 
 
 # --------------
