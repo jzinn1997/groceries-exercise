@@ -21,6 +21,8 @@ products = [
     {"id":20, "name": "Pomegranate Cranberry & Aloe Vera Enrich Drink", "department": "beverages", "aisle": "juice nectars", "price": 4.25}
 ] # based on data from Instacart: https://www.instacart.com/datasets/grocery-shopping-2017
 
+#product part 1
+
 
 products_count = len(products)
 
@@ -40,9 +42,25 @@ for p in sorted_products:
     print(" + " + p["name"] + " (" + str(price_usd) + ")")
 
 
+# departments part 2
 
 
+departments = []
+for p in products:
+    #print(p["department"])
+    #departments.append(p["department"])
+    if p["department"] not in departments:s
+        departments.append(p["department"])
 
+
+department_count = len(departments)
+
+print("--------------")
+print("THERE ARE " + str(department_count) + " DEPARTMENTS:")
+print("--------------")
+
+for d in departments:
+    print(d)
 
 
 
