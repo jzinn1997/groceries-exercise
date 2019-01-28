@@ -55,7 +55,7 @@ for p in products:
 unique_departments = list(set(departments))
 
 
-department_count = len(departments)
+department_count = len(unique_departments)
 
 print("--------------")
 print("THERE ARE " + str(department_count) + " DEPARTMENTS:")
