@@ -33,13 +33,15 @@ def sort_by_name(any_product):
 sorted_products = sorted(products, key=sort_by_name)
 
 
-
-
-for p in sort_by_name:
+for p in sorted_products:
     #print(p["name"])
     #price_usd = #p["price"] # "$4.99"
     price_usd = "${0:.2f}".format(p["price"])
     print(" + " + p["name"] + " (" + str(price_usd) + ")")
+
+
+
+
 
 
 
