@@ -49,7 +49,7 @@ departments = []
 for p in products:
     #print(p["department"])
     #departments.append(p["department"])
-    if p["department"] not in departments:s
+    if p["department"] not in departments:
         departments.append(p["department"])
 
 
